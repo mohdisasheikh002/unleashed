@@ -1,7 +1,7 @@
 let imgAnim = gsap.timeline({ repeat: -1 });
 
 imgAnim.to(".i1", {
-  width: "100%",
+  opacity: "1",
   ease: Expo.easeInOut,
   duration: 2.5,
 });
@@ -20,7 +20,7 @@ imgAnim.to(".i1", {
 imgAnim.to(
   ".i2",
   {
-    width: "100%",
+    opacity: "1",
     ease: Expo.easeInOut,
     duration: 2.5,
   },
@@ -41,7 +41,7 @@ imgAnim.to(".i2", {
 imgAnim.to(
   ".i3",
   {
-    width: "100%",
+    opacity: "1",
     ease: Expo.easeInOut,
     duration: 2.5,
   },

@@ -194,8 +194,9 @@ body {
         top: 0;
         left: 0;
         height: 100%;
-        width: 0%;
+        width: 100%;
         overflow: hidden;
+        opacity: 0;
 
         img {
           height: 100%;
@@ -1172,12 +1173,6 @@ body {
 
         .fs4 {
           line-height: 2vmax;
-
-          span {
-            border-radius: 5vmax;
-            border: 2px solid #000;
-            padding: 0.25vmax 0.5vmax;
-          }
         }
 
         .img-box {
@@ -1219,10 +1214,6 @@ body {
 
           .fs4 {
             line-height: 4vmax;
-
-            span {
-              padding: 0.5vmax 1vmax;
-            }
           }
         }
 
