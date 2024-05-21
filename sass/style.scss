@@ -199,7 +199,6 @@ body {
         opacity: 0;
 
         img {
-          height: 100%;
           width: 100%;
           object-fit: cover;
           object-position: top;
@@ -294,6 +293,18 @@ body {
 
       .img-box-holder {
         gap: 3.5vmax;
+
+        .img-box {
+          img {
+            height: 100%;
+            width: auto;
+            object-position: -40vmax top;
+          }
+
+          &:nth-last-child(1) img {
+            object-position: -28vmax top;
+          }
+        }
       }
 
       .cont-box {
@@ -336,6 +347,18 @@ body {
   @media (max-width: 15cm) {
     .sec1 {
       height: calc(100vh - 11.5vmax);
+
+      .img-box-holder {
+        .img-box {
+          img {
+            object-position: -48vmax top;
+          }
+
+          &:nth-last-child(1) img {
+            object-position: -38vmax top;
+          }
+        }
+      }
 
       .cont-box {
         .row1 {

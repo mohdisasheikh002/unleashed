@@ -175,7 +175,6 @@ body {
   opacity: 0;
 }
 .wrapper .sec1 .img-box-holder .img-box img {
-  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -264,6 +263,16 @@ body {
   .wrapper .sec1 .img-box-holder {
     gap: 3.5vmax;
   }
+  .wrapper .sec1 .img-box-holder .img-box img {
+    height: 100%;
+    width: auto;
+    -o-object-position: -40vmax top;
+       object-position: -40vmax top;
+  }
+  .wrapper .sec1 .img-box-holder .img-box:nth-last-child(1) img {
+    -o-object-position: -28vmax top;
+       object-position: -28vmax top;
+  }
   .wrapper .sec1 .cont-box {
     padding: 7vmax 3.5vmax;
   }
@@ -293,6 +302,14 @@ body {
 @media (max-width: 15cm) {
   .wrapper .sec1 {
     height: calc(100vh - 11.5vmax);
+  }
+  .wrapper .sec1 .img-box-holder .img-box img {
+    -o-object-position: -48vmax top;
+       object-position: -48vmax top;
+  }
+  .wrapper .sec1 .img-box-holder .img-box:nth-last-child(1) img {
+    -o-object-position: -38vmax top;
+       object-position: -38vmax top;
   }
   .wrapper .sec1 .cont-box .row1 {
     flex-direction: column-reverse;
